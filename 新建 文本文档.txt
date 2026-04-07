@@ -14,7 +14,7 @@ git pull origin main --allow-unrelated-histories   //先拉取远程更改并合
 git push -u origin main   //上传文件
 
 ####配置token
-git remote set-url origin https://YuJuHui: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@github.com/YuJuHui/test.git
+git remote set-url origin https://YuJuHui:密钥@github.com/YuJuHui/test.git
 
 ###aaa123
 
@@ -29,3 +29,9 @@ git config --global --get https.proxy
 
 # 测试 GitHub 连接
 git ls-remote https://github.com/YuJuHui/test.git
+
+
+###设置提交邮箱      //提交失败时做
+git config --global user.name "YuJuHui"
+git config --global user.email "你的邮箱@example.com"
+
