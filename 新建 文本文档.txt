@@ -1,3 +1,31 @@
 git init //初始化文件夹
 git add 想保存的文件名     //保存文件命令， .表示保存所有内容
+git commit -m '这次更改的描述'      //添加描述信息
+git checkout -m 哈希码      //回到hash码指示的时间位置
+git branch -M main      //选择项目分支
 
+git remote add origin 项目地址   //选择项目地址
+
+ 
+git pull origin main --allow-unrelated-histories   //先拉取远程更改并合并
+
+：wq保存合并
+
+git push -u origin main   //上传文件
+
+####配置token
+git remote set-url origin https://YuJuHui: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@github.com/YuJuHui/test.git
+
+
+
+###VPN需要
+# 配置代理
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
+
+# 查看当前代理配置
+git config --global --get http.proxy
+git config --global --get https.proxy
+
+# 测试 GitHub 连接
+git ls-remote https://github.com/YuJuHui/test.git
